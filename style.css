@@ -64,6 +64,14 @@ h1{
   margin-bottom:10px;
   font-weight:600;
 }
+.authors a{
+  color: var(--text);
+  text-decoration: none;
+}
+.authors a:hover{
+  color: var(--accent-dark);
+  text-decoration: underline;
+}
 .affiliations{
   color:var(--muted);
   margin-bottom:24px;
