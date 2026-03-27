@@ -98,6 +98,11 @@ h1{
   border-top:1px solid var(--line);
   border-bottom:1px solid var(--line);
 }
+.section p{
+  text-align: justify;
+  line-height: 1.8;
+  hyphens: auto;
+}
 h2{
   margin:0 0 16px;
   font-size:clamp(28px, 3vw, 38px);
