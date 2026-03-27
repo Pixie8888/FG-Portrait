@@ -63,33 +63,7 @@
     <section id="method" class="section alt">
       <div class="container">
         <h2>Framework</h2>
-        <p class="lead">
-          Our framework introduces <strong>3D Flow Encoding</strong> as a new motion condition for diffusion-based portrait animation.
-        </p>
-
-        <div class="grid two">
-          <div class="card">
-            <h3>Core pipeline</h3>
-            <ol class="steps">
-              <li>Estimate FLAME 3D head models from the source and driving portraits.</li>
-              <li>Assemble a target head using source identity and driving motion.</li>
-              <li>Compute dense 3D flows from target-space points back to source-space correspondences.</li>
-              <li>Use depth-guided sampling to query pixel-aligned 3D motion cues.</li>
-              <li>Feed the resulting 3D flow encoding into ControlNet for portrait generation.</li>
-            </ol>
-          </div>
-
-          <div class="card">
-            <h3>Why it helps</h3>
-            <ul class="bullets">
-              <li>Explicit geometry-aware correspondence instead of ambiguous 2D-only motion cues.</li>
-              <li>Learning-free motion prior computed from aligned 3D head models.</li>
-              <li>More robust under large pose variation and cross-identity reenactment.</li>
-              <li>Naturally supports controllable expression and head pose editing.</li>
-            </ul>
-          </div>
-        </div>
-
+        
         <img class="paper-figure framed" src="assets/framework_fig3.png" alt="Framework overview figure of FG-Portrait." />
         <p class="caption">
           Overview of FG-Portrait. The model estimates source and driving 3D heads, constructs the target head, computes 3D flows, performs depth-guided sampling, and uses the resulting 3D flow encoding as motion guidance for diffusion-based generation.
