@@ -177,6 +177,10 @@ pre{
   color:var(--muted);
   text-align:center;
 }
+.editing-figure{
+  max-width: 900px;
+  margin: 0 auto;
+}
 @media (max-width: 860px){
   .grid.two, .grid.three{
     grid-template-columns: 1fr;
